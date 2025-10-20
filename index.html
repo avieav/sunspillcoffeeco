@@ -81,15 +81,29 @@
         margin: 0 auto;
     }
     
-    .logo {
-        font-family: 'Righteous', cursive;
-        font-size: 1.8rem;
-        background: linear-gradient(135deg, var(--purple), var(--pink), var(--orange));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        animation: hueRotate 5s linear infinite;
-    }
+    logo {
+    font-family: 'Righteous', cursive;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--pink);
+    box-shadow: 0 0 20px rgba(255, 77, 155, 0.5);
+}
+
+.logo-text {
+    background: linear-gradient(135deg, var(--purple), var(--pink), var(--orange));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
     
     @keyframes hueRotate {
         0%, 100% { filter: hue-rotate(0deg); }
